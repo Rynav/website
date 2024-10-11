@@ -1,0 +1,12 @@
+html{
+    background-color: rgb(23,23,23);
+    color: white;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    color: white;
+    cursor: pointer;
+
+}
