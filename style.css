@@ -296,6 +296,7 @@
       flex-wrap: wrap;
       gap: 0.6rem;
     }
+    
 
     .skill-pill {
       background: var(--surface);
@@ -329,6 +330,13 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.2rem;
+    }
+
+    @media (max-width: 640px) {
+      .projects-grid {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .project-card {
