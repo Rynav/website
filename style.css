@@ -317,6 +317,8 @@
     .skills-desc>p {
       color: var(--muted);
       line-height: 1.8;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
     }
 
     #projects {
