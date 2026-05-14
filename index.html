@@ -4,11 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michał — rynav</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Sono:wght@300;400;500&display=swap"
-    rel="stylesheet" />
+  <title>Michał</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -21,27 +17,23 @@
     <div class="container">
       <a href="#" class="nav-logo">rynav</a>
       <ul class="nav-links">
-        <li><a href="#about" data-i18n="nav.about">About</a></li>
-        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
-        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="lang-picker">
-        <button class="lang-btn active" data-lang="en"><span class="lang-flag">🇬🇧</span> EN</button>
-        <button class="lang-btn" data-lang="pl"><span class="lang-flag">🇵🇱</span> PL</button>
-      </div>
     </div>
   </nav>
 
   <section id="hero">
     <div class="container">
-      <h1 data-i18n="nav.header">Hi, I'm<br /><span>Michał.</span></h1>
-      <p class="hero-desc" data-i18n="hero.desc">
-        18-year-old <em>developer & student</em> from Kielce, Poland —
+      <h1>Hi, I'm<br /><span>Michał Umański.</span></h1>
+      <p class="hero-desc">
+        18-year-old <em>developer & student</em> from Poland —
         building web apps and constantly learning new things.
       </p>
       <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">View my work ↓</a>
+        <a href="#projects" class="btn btn-primary">View my work ↓</a>
         <a href="https://github.com/rynav" target="_blank" rel="noopener" class="btn btn-ghost">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
             <path
@@ -55,15 +47,15 @@
 
   <section id="about">
     <div class="container">
-      <div class="section-label" data-i18n="about.label">About me</div>
+      <div class="section-label">About me</div>
       <div class="reveal">
         <div class="about-text">
-          <h2 data-i18n="about.title">A developer who loves building things.</h2>
-          <p data-i18n="about.p1">
-            I'm a <em>student from Kielce, Poland</em>, currently exploring the new technologies. I build full-stack TypeScript
+          <h2>A developer who loves building things.</h2>
+          <p>
+            I'm a <em>student from Poland</em>, currently exploring the new technologies. I build full-stack TypeScript
             apps and enjoy working on projects that solve real problems.
           </p>
-          <p data-i18n="about.p2">
+          <p>
             When I'm not writing code, I'm experimenting
             with new ideas, or diving into whatever tech catches my eye next.
           </p>
@@ -72,10 +64,78 @@
     </div>
   </section>
 
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Projects</div>
+      <h2 class="reveal">Things I've built</h2>
+      <br />
+      <div class="projects-grid reveal">
+        <a href="https://github.com/Rynav/picofinder" target="_blank" rel="noopener" class="project-card">
+          <div class="project-top">
+            <span class="project-name">Picofinder</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            An app made for browsing and searching through the archives of the picosong.com music hosting service.
+            Currently deprecated, rewrite is pending.
+          </p>
+          <span class="project-lang">
+            <span class="lang-dot"></span> TypeScript
+          </span>
+        </a>
+        <a href="https://github.com/openveins" target="_blank" rel="noopener" class="project-card">
+          <div class="project-top">
+            <span class="project-name">Openveins</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            Self-hostable and open-source game server management panel. Replacement for Pterodactyl® with a focus on
+            simplicity of deployment and ease of use.
+          </p>
+          <span class="project-lang">
+            <span class="lang-dot"></span> TypeScript / Java (Spring Boot)
+          </span>
+        </a>
+        <a href="https://github.com/rynav/mailworker" target="_blank" rel="noopener" class="project-card">
+          <div class="project-top">
+            <span class="project-name">MailWorker</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            An Email management platform for power users that provide a seamless interface for sending and receiving
+            emails and managing usage. Made in mind with Cloudflare Workers.
+          </p>
+          <span class="project-lang">
+            <span class="lang-dot"></span> TypeScript
+          </span>
+        </a>
+        <a href="https://github.com/rynav/homelab" target="_blank" rel="noopener" class="project-card">
+          <div class="project-top">
+            <span class="project-name">Homelab</span>
+            <span class="project-arrow">↗</span>
+          </div>
+          <p class="project-desc">
+            A collection of configuration files and automation scripts for managing my personal homelab setup. It
+            includes a breakdown of services, scripts and container configuration files.
+          </p>
+        </a>
+        <a href="https://github.com/rynav" target="_blank" rel="noopener" class="project-card"
+          style="border-style: dashed; grid-column: span 2">
+          <div class="project-top">
+            <span class="project-name" style="color: var(--muted);">More on GitHub</span>
+            <span class="project-arrow">→</span>
+          </div>
+          <p class="project-desc">
+            Check out my Github profile for more projects. I'm always working on something new.
+          </p>
+          <span class="project-lang" style="color: var(--accent2);">github.com/rynav</span>
+        </a>
+      </div>
+  </section>
   <section id="skills">
     <div class="container">
-      <div class="section-label" data-i18n="skills.label">Tech stack</div>
-      <h2 class="reveal" data-i18n="skills.title">What I work with</h2>
+      <div class="section-label">Tech stack</div>
+      <h2 class="reveal">What I work with</h2>
       <br />
       <div class="skills-grid reveal">
         <span class="skill-pill hi">TypeScript</span>
@@ -92,7 +152,7 @@
       </div>
       <br />
       <div class="skills-desc">
-        <p class="reveal" data-i18n="skills.desc">
+        <p class="reveal">
           I'm proficient in TypeScript especially in the context of web development. Knowledgeable in React and Next.js
           but currently swithing to Vite and Tanstack.
           I also run my own Homelab server with Proxmox and many flavours of Linux, so I'm not scared of the
@@ -102,83 +162,11 @@
       </div>
     </div>
   </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="section-label" data-i18n="projects.label">Projects</div>
-      <h2 class="reveal" data-i18n="projects.title">Things I've built</h2>
-      <br />
-      <div class="projects-grid reveal">
-        <a href="https://github.com/Rynav/picofinder" target="_blank" rel="noopener" class="project-card" >
-          <div class="project-top">
-            <span class="project-name">Picofinder</span>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p class="project-desc" data-i18n="projects.picofinder">
-            An app made for browsing and searching through the archives of the picosong.com music hosting service.
-            Currently deprecated, rewrite is pending.
-          </p>
-          <span class="project-lang">
-            <span class="lang-dot"></span> TypeScript
-          </span>
-        </a>
-        <a href="https://github.com/openveins" target="_blank" rel="noopener" class="project-card">
-          <div class="project-top">
-            <span class="project-name">Openveins</span>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p class="project-desc" data-i18n="projects.openveins">
-            Self-hostable and open-source game server management panel. Replacement for Pterodactyl® with a focus on
-            simplicity of deployment and ease of use.
-          </p>
-          <span class="project-lang">
-            <span class="lang-dot"></span> TypeScript / Java (Spring Boot)
-          </span>
-        </a>
-        <a href="https://github.com/rynav/mailworker" target="_blank" rel="noopener" class="project-card">
-          <div class="project-top">
-            <span class="project-name">MailWorker</span>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p class="project-desc" data-i18n="projects.mailworker">
-            An Email management platform for power users that provide a seamless interface for sending and receiving
-            emails and managing usage. Made in mind with Cloudflare Workers.
-          </p>
-          <span class="project-lang">
-            <span class="lang-dot"></span> TypeScript
-          </span>
-        </a>
-        <a href="https://github.com/rynav/homelab" target="_blank" rel="noopener" class="project-card">
-          <div class="project-top">
-            <span class="project-name">Homelab</span>
-            <span class="project-arrow">↗</span>
-          </div>
-          <p class="project-desc" data-i18n="projects.homelab">
-            A collection of configuration files and automation scripts for managing my personal homelab setup. It
-            includes a breakdown of services, scripts and container configuration files.
-          </p>
-          <span class="project-lang">
-            <span class="lang-dot"></span> TypeScript
-          </span>
-        </a>
-        <a href="https://github.com/rynav" target="_blank" rel="noopener" class="project-card"
-          style="border-style: dashed; grid-column: span 2">
-          <div class="project-top">
-            <span class="project-name" style="color: var(--muted);">More on GitHub</span>
-            <span class="project-arrow">→</span>
-          </div>
-          <p class="project-desc" data-i18n="projects.more">
-            Check out my Github profile for more projects. I'm always working on something new.
-          </p>
-          <span class="project-lang" style="color: var(--accent2);">github.com/rynav</span>
-        </a>
-      </div>
-  </section>
   <section id="contact">
     <div class="container">
-      <div class="section-label" data-i18n="contact.label">Get in touch</div>
+      <div class="section-label">Get in touch</div>
       <div class="contact-inner reveal">
-        <h2 data-i18n="contact.title">Let's build something together.</h2>
+        <h2>Let's build something together.</h2>
         <div class="contact-links">
           <a href="https://github.com/rynav" target="_blank" rel="noopener" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -194,85 +182,12 @@
   </section>
   <footer>
     <div class="container">
-      <p><span>Michał (rynav)</span> · Kielce, Poland · <span id="year-span"></span></p>
+      <p><span>Michał Umański</span> · Poland · <span id="year-span"></span></p>
     </div>
   </footer>
   <script>
 
     document.getElementById('year-span').textContent = new Date().getFullYear();
-
-    const translations = {
-      en: {
-        "nav.header": "Hi, I'm<br /><span>Michał.</span>",
-        "nav.about": "About",
-        "nav.skills": "Skills",
-        "nav.projects": "Projects",
-        "nav.contact": "Contact",
-        "hero.desc": "18-year-old <em>developer & student</em> from Kielce, Poland — building web apps and constantly learning new things.",
-        "hero.cta": "View my work ↓",
-        "about.label": "About me",
-        "about.title": "A developer who loves building things.",
-        "about.p1": "I'm a <em>student from Kielce, Poland</em>, currently exploring the new technologies. I build full-stack TypeScript apps and enjoy working on projects that solve real problems.",
-        "about.p2": "When I'm not writing code, I'm experimenting with new ideas, or diving into whatever tech catches my eye next.",
-        "skills.label": "Tech stack",
-        "skills.title": "What I work with",
-        "skills.desc": "I'm proficient in TypeScript especially in the context of web development. Knowledgeable in React and Next.js but currently swithing to Vite and Tanstack. I also run my own Homelab server with Proxmox and many flavours of Linux, so I'm not scared of the terminal. I am also skilled in AI usage and prompt engineering.",
-        "projects.label": "Projects",
-        "projects.title": "Things I've built",
-        "projects.picofinder": "An app made for browsing and searching through the archives of the picosong.com music hosting service. Currently deprecated, rewrite is pending.",
-        "projects.openveins": "Self-hostable and open-source game server management panel. Replacement for Pterodactyl® with a focus on simplicity of deployment and ease of use.",
-        "projects.mailworker": "An Email management platform for power users that provide a seamless interface for sending and receiving emails and managing usage. Made in mind with Cloudflare Workers.",
-        "projects.homelab": "A collection of configuration files and automation scripts for managing my personal homelab setup. It includes a breakdown of services, scripts and container configuration files.",
-        "projects.more": "Check out my Github profile for more projects. I'm always working on something new.",
-        "contact.label": "Get in touch",
-        "contact.title": "Let's build something together."  
-      },
-      pl: {
-        "nav.header": "Hej, jestem<br /><span>Michał.</span>",
-        "nav.about": "O mnie",
-        "nav.skills": "Umiejętności",
-        "nav.projects": "Projekty",
-        "nav.contact": "Kontakt",
-        "hero.desc": "18 letni <em>deweloper i student</em> z Kielc — budujący aplikacje webowe i ciągle uczący się nowych rzeczy.",
-        "hero.cta": "Zobacz moją pracę ↓",
-        "about.label": "O mnie",
-        "about.title": "Deweloper, który kocha budowanie rzeczy.",
-        "about.p1": "Jestem <em>studentem z Kielc</em>, obecnie eksploruję nowe technologie. Buduję aplikacje full-stack w TypeScript i lubię robić projekty, które rozwiązują prawdziwe problemy.",
-        "about.p2": "Gdy nie piszę kodu, eksperymentuję z nowymi pomysłami lub zagłębiam się w technologiach, które akurat przykuły moją uwagę.",
-        "skills.label": "Tech stack",
-        "skills.title": "Z czym pracuje",
-        "skills.desc": "Jestem biegły w TypeScript, zwłaszcza w kontekście tworzenia stron internetowych. Znam się na React'cie i Next.js, ale obecnie pracuję na przejściu do Vite i Tanstack. Prowadzę też własny serwer Homelab z Proxmoxem i wieloma wariantami Linuksa, więc nie boję się terminala. Jestem te biegły w obsłudze AI i inżynierii promptów.",
-        "projects.label": "Projekty",
-        "projects.title": "Rzeczy, które zbudowałem",
-        "projects.picofinder": "Aplikacja do przeglądania i wyszukiwania w archiwach usługi hostingowej picosong.com. Obecnie przestarzała, oczekuje na przepisanie.",
-        "projects.openveins": "Panel do zarządzania serwerami gier, Self-hostable i Open-source. Zastępstwo dla Pterodactyl® z naciskiem na prostotę wdrożenia i łatwość użycia.",
-        "projects.mailworker": "Platforma do zarządzania e-mailami, zaprojektowana z myślą o płynnym interfejsie do wysyłania i odbierania wiadomości oraz zarządzania użyciem. Stworzona z myślą o Cloudflare Workers.",
-        "projects.homelab": "Zbiór plików konfiguracyjnych i skryptów automatyzujących zarządzanie moim osobistym homelabem. Zawiera przegląd usług, skryptów i plików konfiguracyjnych kontenerów.",
-        "projects.more": "Sprawdź mój profil na Githubie, aby zobaczyć więcej projektów. Zawsze pracuję nad czymś nowym.",
-        "contact.label": "Skontaktuj się",
-        "contact.title": "Zbudujmy coś razem."  
-      }
-    }
-
-
-    let currentLang = 'en';
-
-    function applyLang(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.dataset.i18n;
-        if (t[key] !== undefined) el.innerHTML = t[key];
-      });
-      document.documentElement.lang = lang;
-      document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.lang === lang);
-      });
-    }
-
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-      btn.addEventListener('click', () => applyLang(btn.dataset.lang));
-    });
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
